@@ -1,10 +1,11 @@
 .button {
     border: 3px;
-    margin: 10px 300px;
     line-height: 2.5;
-    padding: 0 30px;
+    padding: 0 20px;
     font-size: 1rem;
+    margin: 2%;
     text-align: center;
+    animation-duration: 500ms;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
@@ -22,5 +23,18 @@
 }
 
 .font {
-    background-color: aqua;
+    background-color:cadetblue;
+    border-bottom-left-radius: 80px 80px;
+    border-bottom-right-radius: 80px 80px;
+}
+
+.title {
+    text-align: center;
+    background-color: cadetblue;
+    color: #fff;
+    text-shadow: #000;
+    border: solid;
+    border-color: cadetblue;
+    border-top-left-radius: 80px 80px;
+    border-top-right-radius: 80px 80px;
 }
