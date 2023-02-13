@@ -6,6 +6,7 @@ const fs = require("fs");
 
 const { execFile } = require("node:child_process");
 const pngquant = require("pngquant-bin");
+const { maxHeaderSize } = require('node:http');
 
 let progressInterval
 
@@ -33,8 +34,8 @@ function accessOrCreateFolder(folderPath, mode = fs.constants.W_OK) {
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 800,
-    height: 800,
+    width: maxHeaderSize,
+    height: maxHeaderSize,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
