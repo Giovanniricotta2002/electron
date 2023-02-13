@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Giovanniricotta2002/electron#readme",
   "devDependencies": {
     "electron": "^23.0.0"
+  },
+  "dependencies": {
+    "pngquant-bin": "^6.0.1"
   }
 }
