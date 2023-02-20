@@ -38,7 +38,7 @@ function createWindow () {
     height: maxHeaderSize,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
   })
   nativeTheme.themeSource = 'dark'
 

@@ -1,7 +1,7 @@
 {
   "name": "electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "dddd",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Giovanniricotta2002/electron.git"
   },
-  "author": "",
+  "author": "Gio_Paul",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Giovanniricotta2002/electron/issues"
@@ -21,6 +21,10 @@
   "homepage": "https://github.com/Giovanniricotta2002/electron#readme",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.5",
+    "@electron-forge/maker-deb": "^6.0.5",
+    "@electron-forge/maker-rpm": "^6.0.5",
+    "@electron-forge/maker-squirrel": "^6.0.5",
+    "@electron-forge/maker-zip": "^6.0.5",
     "electron": "^23.0.0"
   },
   "dependencies": {
@@ -29,7 +33,24 @@
   },
   "config": {
     "forge": {
-      "makers": [],
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip"
+        },
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "electron",
+            "description": "test"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-deb"
+        },
+        {
+          "name": "@electron-forge/maker-rpm"
+        }
+      ],
       "publishers": []
     }
   }
