@@ -4,7 +4,11 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "startf": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,7 @@
   },
   "homepage": "https://github.com/Giovanniricotta2002/electron#readme",
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.5",
     "electron": "^23.0.0"
   },
   "dependencies": {
