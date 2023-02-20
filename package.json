@@ -4,11 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "startf": "electron-forge start",
+    "start": "electron-forge start",
+    "startf": "electron .",
     "package": "electron-forge package",
     "make": "electron-forge make"
-
   },
   "repository": {
     "type": "git",
@@ -25,6 +24,13 @@
     "electron": "^23.0.0"
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
     "pngquant-bin": "^6.0.1"
+  },
+  "config": {
+    "forge": {
+      "makers": [],
+      "publishers": []
+    }
   }
 }
